@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haze SMP — Acteurportaal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">HAZE <span>SMP</span>
+      </a>
+      <button class="menu-button">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="afleveringen.html">Afleveringen</a>
+        <a href="personages.html">Personages</a>
+        <a href="lore.html">Lore</a>
+        <a class="active portal-link" href="acteurs.html">Acteurportaal</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">ALLEEN VOOR CAST</p>
+        <h2>Acteurportaal</h2>
+        <p class="page-lead">Log in om het interne cast-dashboard te openen.</p>
+      </section>
+      <section class="content">
+        <form class="login-box" id="loginForm">
+          <h3>Inloggen</h3>
+          <p class="muted">Gebruik je castaccount.</p>
+          <label for="email">E-mailadres</label>
+          <input id="email" type="email" autocomplete="email" required>
+          <label for="password">Wachtwoord</label>
+          <input id="password" type="password" autocomplete="current-password" required>
+          <button class="button primary submit" type="submit">Inloggen</button>
+          <p class="error" id="loginError" aria-live="polite">
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>© 2026 <strong>Haze SMP</strong> · Acteurportaal</footer>
+    <script src="site.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="acteurs.js"></script>
+  </body>
+</html>

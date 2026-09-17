@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Haze SMP — Castdashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="index.html">HAZE <span>SMP</span>
+      </a>
+      <button class="menu-button">☰</button>
+      <nav class="nav">
+        <a href="index.html">Publieke site</a>
+        <a class="active portal-link" href="acteur-dashboard.html">Castdashboard</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">ALLEEN VOOR CAST</p>
+        <h2>Intern overzicht</h2>
+        <p class="page-lead">Planning, scripts en mededelingen voor de cast.</p>
+      </section>
+      <section class="content">
+        <section class="dashboard">
+          <p class="eyebrow">WELKOM, ACTEUR</p>
+          <h2>Castdashboard</h2>
+          <p class="muted">Deze informatie komt rechtstreeks uit de beveiligde castdatabase.</p>
+          <p class="error" id="dashboardError" aria-live="polite"></p>
+          <div class="dashboard-grid" id="updates">
+            <div class="dashboard-item"><p class="muted">Interne updates laden…</p></div>
+          </div>
+          <p id="adminLink"></p>
+          <button class="button logout" id="logout" type="button">Uitloggen</button>
+        </section>
+      </section>
+    </main>
+    <footer>© 2026 <strong>Haze SMP</strong> · Acteurportaal</footer>
+    <script src="site.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script src="acteur-dashboard.js"></script>
+  </body>
+</html>
