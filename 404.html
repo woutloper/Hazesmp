@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 — Haze SMP</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+<style>
+  .error-page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .error-page::before {
+    content: "404";
+    position: absolute;
+    font-size: clamp(180px, 35vw, 520px);
+    font-weight: 900;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.025);
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .error-content {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+  }
+
+  .error-code {
+    font-size: clamp(80px, 15vw, 150px);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+    margin: 0 0 25px;
+  }
+
+  .error-code span {
+    opacity: 0.45;
+  }
+
+  .error-content h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 0 0 15px;
+  }
+
+  .error-content .muted {
+    max-width: 500px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+  }
+
+  .error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .error-decoration {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .error-decoration::before,
+  .error-decoration::after {
+    content: "";
+    position: absolute;
+    inset: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.035);
+    border-radius: 50%;
+  }
+
+  @media (max-width: 600px) {
+    .error-page {
+      min-height: calc(100vh - 70px);
+    }
+
+    .error-decoration {
+      width: 320px;
+      height: 320px;
+    }
+
+    .error-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+</style>
+
+
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="logo" href="">HAZE <span>SMP</span></a>
+
+
+  <button class="menu-button" aria-label="Menu openen">☰</button>
+
+  <nav class="nav">
+    <a href="">Home</a>
+    <a href="afleveringen">Afleveringen</a>
+    <a href="personages">Personages</a>
+    <a href="lore">Lore</a>
+    <a class="portal-link" href="acteurs">Acteurportaal</a>
+  </nav>
+</header>
+
+<main>
+  <section class="error-page">
+    <div class="error-decoration"></div>
+
+    <div class="error-content">
+      <p class="eyebrow">SCRIPTED SMP</p>
+
+      <div class="error-code">
+        4<span>0</span>4
+      </div>
+
+      <h1>Deze pagina bestaat niet.</h1>
+
+      <p class="muted">
+        De pagina die je probeert te vinden is verdwenen,
+        verplaatst of heeft nooit bestaan.
+      </p>
+
+      <div class="error-actions">
+        <a class="button primary" href="">
+          ← Terug naar home
+        </a>
+
+        <a class="button secondary" href="afleveringen">
+          Bekijk het verhaal
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 <strong>Haze SMP</strong>
+</footer>
+
+<script src="site.js"></script>
+```
+
+  </body>
+</html>
